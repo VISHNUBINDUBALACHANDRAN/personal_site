@@ -1,0 +1,332 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 8 12% 6%;
+    --foreground: 45 25% 92%;
+
+    --card: 8 15% 9%;
+    --card-foreground: 45 25% 95%;
+
+    --popover: 8 15% 9%;
+    --popover-foreground: 45 25% 95%;
+
+    --primary: 45 88% 52%;
+    --primary-foreground: 8 12% 6%;
+
+    --secondary: 35 35% 28%;
+    --secondary-foreground: 45 25% 95%;
+
+    --muted: 8 12% 15%;
+    --muted-foreground: 45 15% 68%;
+
+    --accent: 42 85% 65%;
+    --accent-foreground: 8 12% 6%;
+    
+    --success: 142 75% 48%;
+    --success-foreground: 45 25% 95%;
+    
+    --luxury: 45 88% 52%;
+    --luxury-foreground: 8 12% 6%;
+    
+    --premium: 35 70% 38%;
+    --premium-foreground: 45 25% 95%;
+    
+    --platinum: 215 25% 75%;
+    --platinum-foreground: 8 12% 6%;
+    
+    --diamond: 60 100% 97%;
+    --diamond-foreground: 8 12% 6%;
+    
+    /* Ultra-luxury gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(45 88% 52%), hsl(35 70% 38%));
+    --gradient-hero: linear-gradient(135deg, hsl(8 12% 6%) 0%, hsl(45 88% 52%) 50%, hsl(35 35% 28%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(8 15% 9%) 0%, hsl(8 15% 12%) 100%);
+    --gradient-luxury: linear-gradient(135deg, hsl(45 88% 52%) 0%, hsl(35 70% 38%) 100%);
+    --gradient-platinum: linear-gradient(135deg, hsl(215 25% 75%) 0%, hsl(45 88% 52%) 100%);
+    --gradient-diamond: linear-gradient(135deg, hsl(60 100% 97%) 0%, hsl(45 88% 52%) 50%, hsl(215 25% 75%) 100%);
+    --gradient-ultra: linear-gradient(135deg, hsl(45 88% 52%) 0%, hsl(215 25% 75%) 50%, hsl(60 100% 97%) 100%);
+    
+    /* Ultra-premium shadows */
+    --shadow-elegant: 0 32px 64px -12px hsl(8 12% 3% / 0.95);
+    --shadow-glow: 0 0 80px hsl(45 88% 52% / 0.4);
+    --shadow-luxury: 0 0 100px hsl(45 88% 52% / 0.5);
+    --shadow-platinum: 0 25px 50px -12px hsl(215 25% 75% / 0.3);
+    --shadow-diamond: 0 40px 80px -15px hsl(60 100% 97% / 0.2);
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 8 12% 4%;
+    --foreground: 45 25% 95%;
+
+    --card: 8 15% 7%;
+    --card-foreground: 45 25% 97%;
+
+    --popover: 8 15% 7%;
+    --popover-foreground: 45 25% 97%;
+
+    --primary: 45 88% 55%;
+    --primary-foreground: 8 12% 4%;
+
+    --secondary: 35 35% 30%;
+    --secondary-foreground: 45 25% 97%;
+
+    --muted: 8 12% 12%;
+    --muted-foreground: 45 15% 72%;
+
+    --accent: 42 85% 68%;
+    --accent-foreground: 8 12% 4%;
+    
+    --success: 142 75% 52%;
+    --success-foreground: 45 25% 97%;
+    
+    --luxury: 45 88% 55%;
+    --luxury-foreground: 8 12% 4%;
+    
+    --premium: 35 70% 42%;
+    --premium-foreground: 45 25% 97%;
+    
+    --platinum: 215 25% 78%;
+    --platinum-foreground: 8 12% 4%;
+    
+    --diamond: 60 100% 98%;
+    --diamond-foreground: 8 12% 4%;
+    
+    /* Ultra-luxury dark gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(45 88% 55%), hsl(35 70% 42%));
+    --gradient-hero: linear-gradient(135deg, hsl(8 12% 4%) 0%, hsl(45 88% 55%) 50%, hsl(35 35% 30%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(8 15% 7%) 0%, hsl(8 15% 10%) 100%);
+    --gradient-luxury: linear-gradient(135deg, hsl(45 88% 55%) 0%, hsl(35 70% 42%) 100%);
+    --gradient-platinum: linear-gradient(135deg, hsl(215 25% 78%) 0%, hsl(45 88% 55%) 100%);
+    --gradient-diamond: linear-gradient(135deg, hsl(60 100% 98%) 0%, hsl(45 88% 55%) 50%, hsl(215 25% 78%) 100%);
+    --gradient-ultra: linear-gradient(135deg, hsl(45 88% 55%) 0%, hsl(215 25% 78%) 50%, hsl(60 100% 98%) 100%);
+    
+    /* Ultra-premium dark shadows */
+    --shadow-elegant: 0 32px 64px -12px hsl(8 12% 2% / 0.98);
+    --shadow-glow: 0 0 80px hsl(45 88% 55% / 0.5);
+    --shadow-luxury: 0 0 100px hsl(45 88% 55% / 0.6);
+    --shadow-platinum: 0 25px 50px -12px hsl(215 25% 78% / 0.4);
+    --shadow-diamond: 0 40px 80px -15px hsl(60 100% 98% / 0.3);
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+  }
+
+  /* Ultra-Luxury Typography System */
+  .glass-text {
+    color: hsl(var(--foreground));
+    text-shadow: 
+      0 0 20px hsla(var(--luxury), 0.5),
+      0 0 40px hsla(var(--luxury), 0.3),
+      0 0 60px hsla(var(--primary), 0.2);
+    backdrop-filter: blur(3px);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  .gradient-luxury-glass {
+    background: var(--gradient-luxury);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 
+      0 0 30px hsla(var(--luxury), 0.5),
+      0 0 60px hsla(var(--luxury), 0.3);
+    filter: drop-shadow(0 0 15px hsla(var(--luxury), 0.4));
+  }
+
+  .gradient-platinum-glass {
+    background: var(--gradient-platinum);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 
+      0 0 25px hsla(var(--platinum), 0.6),
+      0 0 50px hsla(var(--luxury), 0.3);
+    filter: drop-shadow(0 0 12px hsla(var(--platinum), 0.4));
+  }
+
+  .gradient-diamond-glass {
+    background: var(--gradient-diamond);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 
+      0 0 30px hsla(var(--diamond), 0.8),
+      0 0 60px hsla(var(--luxury), 0.4);
+    filter: drop-shadow(0 0 18px hsla(var(--diamond), 0.6));
+  }
+
+  /* Ultra-Premium Glass Card System */
+  .glass-card {
+    background: linear-gradient(135deg, 
+      hsla(var(--card), 0.95) 0%,
+      hsla(var(--luxury), 0.12) 30%,
+      hsla(var(--platinum), 0.08) 70%,
+      hsla(var(--card), 0.95) 100%);
+    backdrop-filter: blur(40px);
+    border: 1px solid hsla(var(--luxury), 0.2);
+    box-shadow: 
+      0 32px 64px hsla(var(--luxury), 0.2),
+      0 8px 24px hsla(var(--primary), 0.15),
+      inset 0 2px 0 hsla(var(--luxury), 0.3),
+      inset 0 -1px 0 hsla(var(--platinum), 0.2);
+  }
+
+  .glass-card-premium {
+    background: linear-gradient(135deg, 
+      hsla(var(--card), 0.98) 0%,
+      hsla(var(--luxury), 0.15) 25%,
+      hsla(var(--platinum), 0.12) 50%,
+      hsla(var(--diamond), 0.08) 75%,
+      hsla(var(--card), 0.98) 100%);
+    backdrop-filter: blur(50px);
+    border: 2px solid hsla(var(--luxury), 0.25);
+    box-shadow: 
+      0 40px 80px hsla(var(--luxury), 0.25),
+      0 16px 32px hsla(var(--platinum), 0.2),
+      0 8px 16px hsla(var(--diamond), 0.15),
+      inset 0 3px 0 hsla(var(--luxury), 0.4),
+      inset 0 -2px 0 hsla(var(--platinum), 0.3);
+  }
+
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-luxury {
+    background: var(--gradient-luxury);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .card-gradient {
+    background: var(--gradient-card);
+  }
+
+  .luxury-gradient {
+    background: var(--gradient-luxury);
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-luxury {
+    box-shadow: var(--shadow-luxury);
+  }
+
+  .shadow-platinum {
+    box-shadow: var(--shadow-platinum);
+  }
+
+  .shadow-diamond {
+    box-shadow: var(--shadow-diamond);
+  }
+
+  .transition-smooth {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .transition-ultra {
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Ultra-Premium Backgrounds */
+  .bg-ultra-luxury {
+    background: var(--gradient-ultra);
+  }
+
+  .bg-platinum-luxury {
+    background: var(--gradient-platinum);
+  }
+
+  .bg-diamond-luxury {
+    background: var(--gradient-diamond);
+  }
+
+  /* Hover Effects */
+  .hover-lift {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: var(--shadow-luxury);
+  }
+
+  .hover-glow {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-glow:hover {
+    box-shadow: 
+      var(--shadow-luxury),
+      0 0 60px hsla(var(--luxury), 0.4);
+  }
+}
