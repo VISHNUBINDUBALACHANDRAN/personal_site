@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail, Award, Trophy, Brain } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-background">
+    <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-background">
       {/* Background gradient only */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/5 via-transparent to-luxury/5"></div>
@@ -27,7 +27,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
