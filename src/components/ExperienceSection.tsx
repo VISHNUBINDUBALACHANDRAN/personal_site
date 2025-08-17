@@ -26,25 +26,19 @@ const ExperienceSection = () => {
     <section className="py-40 relative overflow-hidden min-h-screen flex items-center">
       {/* Ultra-luxury background orchestration */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-luxury/3 via-platinum/2 to-background"></div>
-      <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-luxury/8 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-1/4 left-1/4 w-[500px] h-[500px] bg-platinum/6 rounded-full blur-3xl animate-pulse delay-1000"></div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-diamond/4 rounded-full blur-3xl animate-pulse delay-500"></div>
       
-      {/* Sophisticated geometric elements */}
-      <div className="absolute top-20 left-20 w-48 h-48 border-2 border-luxury/20 rounded-[4rem] rotate-45 opacity-60"></div>
-      <div className="absolute bottom-20 right-20 w-36 h-36 border border-platinum/25 rounded-[3rem] -rotate-12 opacity-50"></div>
-      <div className="absolute top-1/3 right-1/4 w-24 h-24 border border-diamond/30 rounded-2xl rotate-30 opacity-40"></div>
-      <div className="absolute bottom-1/3 left-1/4 w-32 h-32 border border-primary/20 rounded-[2.5rem] -rotate-6 opacity-45"></div>
+      {/* Geometric elements removed */}
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-32">
-          <h2 className="text-6xl md:text-7xl font-playfair font-bold mb-8 leading-tight glass-text">
-            Distinguished <span className="gradient-diamond-glass">Career</span>
+          <h2 className="text-6xl md:text-7xl font-playfair font-bold mb-8 leading-tight gradient-luxury-glass">
+            <span className="gradient-luxury-glass">Career</span>
           </h2>
-          <div className="w-40 h-1 bg-ultra-luxury mx-auto opacity-70 rounded-full"></div>
-          <p className="text-xl glass-text opacity-70 mt-8 max-w-2xl mx-auto font-light leading-relaxed">
+          <div className="w-40 h-1 bg-gradient-to-r from-transparent via-luxury to-transparent mx-auto"></div>
+          {/* Description text removed per request */}
+          {/* <p className="text-xl gradient-luxury-glass opacity-70 mt-8 max-w-2xl mx-auto font-light leading-relaxed">
             A journey of innovation and excellence across industry-leading organizations
-          </p>
+          </p> */}
         </div>
 
         <div className="max-w-5xl mx-auto space-y-12">
@@ -58,16 +52,14 @@ const ExperienceSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/8 to-transparent opacity-50"></div>
                 
                 {/* Floating accent elements */}
-                <div className="absolute top-8 right-8 w-3 h-3 bg-luxury/30 rounded-full animate-pulse"></div>
-                <div className="absolute bottom-8 left-8 w-2 h-2 bg-platinum/40 rounded-full animate-pulse delay-300"></div>
-                <div className="absolute top-1/3 left-12 w-1.5 h-1.5 bg-diamond/30 rounded-full animate-pulse delay-600"></div>
+                {/* Removed animated dots */}
                 
                 {/* Content */}
                 <div className="relative z-10 space-y-10">
                   
                   {/* Company Name - Ultra-elegant */}
                   <div className="mb-8">
-                    <h3 className="text-5xl md:text-6xl font-playfair font-bold gradient-platinum-glass tracking-tight leading-none">
+                    <h3 className="text-5xl md:text-6xl font-playfair font-bold gradient-luxury-glass tracking-tight leading-none">
                       {exp.company}
                     </h3>
                   </div>
@@ -76,12 +68,12 @@ const ExperienceSection = () => {
                   <div className="w-32 h-px bg-gradient-to-r from-transparent via-luxury via-platinum to-transparent mx-auto opacity-60"></div>
                   
                   {/* Position - Refined styling */}
-                  <h4 className="text-3xl md:text-4xl font-playfair font-semibold glass-text tracking-wide leading-relaxed">
+                  <h4 className="text-3xl md:text-4xl font-playfair font-semibold gradient-luxury-glass tracking-wide leading-relaxed">
                     {exp.position}
                   </h4>
                   
                   {/* Duration - Sophisticated */}
-                  <div className="text-xl glass-text opacity-80 font-medium tracking-wider">
+                  <div className="text-xl gradient-luxury-glass opacity-80 font-medium tracking-wider">
                     {exp.duration}
                   </div>
                 </div>

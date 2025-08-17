@@ -12,22 +12,20 @@ const Footer = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center">
           <div className="mb-12">
-            <h3 className="text-4xl md:text-5xl font-playfair font-bold mb-6 gradient-diamond-glass tracking-tight">
+            <h3 className="text-4xl md:text-5xl font-playfair font-bold mb-6 gradient-luxury-glass tracking-tight">
               Vishnu Bindu Balachandran
             </h3>
             <div className="w-32 h-px bg-gradient-to-r from-transparent via-luxury to-transparent mx-auto opacity-60 mb-8"></div>
-            <p className="text-muted-foreground max-w-4xl mx-auto text-xl font-light leading-relaxed glass-text opacity-80">
+            <p className="gradient-luxury-glass max-w-4xl mx-auto text-xl font-light leading-relaxed opacity-80">
               Far More To Go, Far More To Conquer
             </p>
           </div>
           
-          <div className="flex items-center justify-center gap-6 text-muted-foreground">
+          <div className="flex items-center justify-center gap-6 gradient-luxury-glass">
             {/* Premium accent elements */}
-            <div className="w-2 h-2 bg-luxury/30 rounded-full animate-pulse"></div>
-            <span className="text-xl glass-text opacity-70 font-medium tracking-wide">
+            <span className="text-xl gradient-luxury-glass opacity-70 font-medium tracking-wide">
               © {new Date().getFullYear()} All rights reserved
             </span>
-            <div className="w-2 h-2 bg-platinum/30 rounded-full animate-pulse delay-500"></div>
           </div>
         </div>
       </div>
