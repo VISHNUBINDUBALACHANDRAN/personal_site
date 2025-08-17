@@ -5,48 +5,46 @@ import { Mail, Linkedin, Send } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section className="py-32 relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Ultra-luxury background */}
       <div className="absolute inset-0 bg-gradient-to-t from-background via-luxury/4 via-platinum/2 to-background"></div>
       <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-luxury/8 via-platinum/4 to-transparent"></div>
       
       {/* Floating elements removed */}
       
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12 py-8 lg:py-16 relative z-10">
         <div className="text-center">
-          <h2 className="text-6xl md:text-7xl font-playfair font-bold mb-8 leading-tight gradient-luxury-glass">
+          <h2 className="text-4xl sm:text-6xl lg:text-7xl font-playfair font-bold mb-6 sm:mb-8 leading-tight gradient-luxury-glass">
             <span className="gradient-luxury-glass">Connect</span>
           </h2>
-          <div className="w-28 h-1 bg-gradient-to-r from-transparent via-luxury to-transparent mx-auto mb-16"></div>
+          <div className="w-20 sm:w-28 h-1 bg-gradient-to-r from-transparent via-luxury to-transparent mx-auto mb-8 sm:mb-16"></div>
           {/* Description text removed per request */}
           {/* <p className="text-xl gradient-luxury-glass opacity-70 mb-16 max-w-2xl mx-auto font-light leading-relaxed">
             Let's collaborate on the next breakthrough innovation
           </p> */}
           
-          <div className="flex justify-center gap-10">
+          <div className="flex justify-center gap-4 sm:gap-8 lg:gap-10">
             <a 
               href="https://www.linkedin.com/in/vishnu-bindu-balachandran-6882811a2/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group relative w-24 h-24 rounded-[2rem] flex items-center justify-center glass-card-premium border-2 border-luxury/25 hover:border-luxury/50 transition-ultra hover-glow"
+              className="group relative w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-xl sm:rounded-2xl lg:rounded-[2rem] flex items-center justify-center glass-card-premium border-2 border-luxury/25 hover:border-luxury/50 transition-ultra hover-glow"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-luxury/25 via-platinum/15 to-diamond/10 opacity-0 group-hover:opacity-100 transition-all duration-700 rounded-[2rem] blur-xl"></div>
-              <Linkedin className="w-12 h-12 text-luxury relative z-10 transition-transform duration-500 group-hover:scale-110" />
-              {/* Removed dot pattern */}
+              <div className="absolute inset-0 bg-gradient-to-br from-luxury/25 via-platinum/15 to-diamond/10 opacity-0 group-hover:opacity-100 transition-all duration-700 rounded-xl sm:rounded-2xl lg:rounded-[2rem] blur-xl"></div>
+              <Linkedin className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 text-luxury relative z-10 transition-transform duration-500 group-hover:scale-110" />
             </a>
             <a 
               href="mailto:vishnubindubalachandran@outlook.com"
-              className="group relative w-24 h-24 rounded-[2rem] flex items-center justify-center glass-card-premium border-2 border-platinum/25 hover:border-platinum/50 transition-ultra hover-glow"
+              className="group relative w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-xl sm:rounded-2xl lg:rounded-[2rem] flex items-center justify-center glass-card-premium border-2 border-platinum/25 hover:border-platinum/50 transition-ultra hover-glow"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-platinum/25 via-luxury/15 to-diamond/10 opacity-0 group-hover:opacity-100 transition-all duration-700 rounded-[2rem] blur-xl"></div>
-              <Mail className="w-12 h-12 text-platinum relative z-10 transition-transform duration-500 group-hover:scale-110" />
-              {/* Removed dot pattern */}
+              <div className="absolute inset-0 bg-gradient-to-br from-platinum/25 via-luxury/15 to-diamond/10 opacity-0 group-hover:opacity-100 transition-all duration-700 rounded-xl sm:rounded-2xl lg:rounded-[2rem] blur-xl"></div>
+              <Mail className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 text-platinum relative z-10 transition-transform duration-500 group-hover:scale-110" />
             </a>
             <a 
               href="https://x.com/wizard_of_mudra" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group relative w-24 h-24 rounded-[2rem] flex items-center justify-center glass-card-premium border-2 border-diamond/25 hover:border-diamond/50 transition-ultra hover-glow"
+              className="group relative w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-xl sm:rounded-2xl lg:rounded-[2rem] flex items-center justify-center glass-card-premium border-2 border-diamond/25 hover:border-diamond/50 transition-ultra hover-glow"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-diamond/25 via-platinum/15 to-luxury/10 opacity-0 group-hover:opacity-100 transition-all duration-700 rounded-[2rem] blur-xl"></div>
               <svg className="w-12 h-12 text-diamond relative z-10 transition-transform duration-500 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
