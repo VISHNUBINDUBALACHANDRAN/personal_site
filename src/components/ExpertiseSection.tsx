@@ -55,7 +55,7 @@ const ExpertiseSection = () => {
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           {expertiseAreas.map((area, index) => (
             <div key={index} className="group relative">
-              <div className="glass-card-premium p-10 relative overflow-hidden rounded-[2.5rem] hover-glow transition-ultra border border-luxury/15">
+              <div className="glass-card-premium p-6 sm:p-8 lg:p-10 relative overflow-hidden rounded-xl sm:rounded-2xl lg:rounded-[2.5rem] hover-glow transition-ultra border border-luxury/15">
                 {/* Multi-layer background effects */}
                 <div className="absolute inset-0 bg-gradient-to-br from-luxury/12 via-platinum/8 to-diamond/6 opacity-0 group-hover:opacity-100 transition-all duration-700 blur-xl"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/6 to-transparent opacity-40"></div>

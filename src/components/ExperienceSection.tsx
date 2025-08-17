@@ -45,7 +45,7 @@ const ExperienceSection = () => {
           {experiences.map((exp, index) => (
             <div key={index} className="group relative">
               {/* Ultra-premium experience card */}
-              <div className="glass-card-premium p-20 text-center relative overflow-hidden rounded-[4rem] hover-lift transition-ultra">
+              <div className="glass-card-premium p-6 sm:p-10 lg:p-20 text-center relative overflow-hidden rounded-xl sm:rounded-2xl lg:rounded-[4rem] hover-lift transition-ultra">
                 
                 {/* Multi-layer background effects */}
                 <div className="absolute inset-0 bg-gradient-to-br from-luxury/15 via-platinum/10 to-diamond/8 opacity-0 group-hover:opacity-100 transition-all duration-700 blur-xl"></div>

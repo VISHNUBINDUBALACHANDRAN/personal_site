@@ -29,7 +29,7 @@ const AchievementsSection = () => {
             {achievements.map((achievement, index) => (
               <div key={index} className="group relative">
                 {/* Ultra-premium achievement card */}
-                <div className="glass-card-premium h-[320px] flex flex-col items-center justify-center text-center relative overflow-hidden rounded-[3rem] hover-glow transition-ultra">
+                <div className="glass-card-premium h-[280px] sm:h-[300px] lg:h-[320px] flex flex-col items-center justify-center text-center relative overflow-hidden rounded-xl sm:rounded-2xl lg:rounded-[3rem] hover-glow transition-ultra">
                   
                   {/* Multi-dimensional glow effects */}
                   <div className="absolute inset-0 bg-gradient-to-br from-luxury/25 via-platinum/15 to-diamond/10 opacity-0 group-hover:opacity-100 transition-all duration-700 blur-xl"></div>
