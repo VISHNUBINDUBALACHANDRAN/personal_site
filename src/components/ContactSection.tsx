@@ -70,8 +70,8 @@ const ContactSection = () => {
               rel="noopener noreferrer"
               className="group relative w-24 h-24 rounded-[2rem] flex items-center justify-center glass-card-premium border-2 border-diamond/25 hover:border-diamond/50 transition-ultra hover-glow"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-diamond/25 via-platinum/15 to-luxury/10 opacity-0 group-hover:opacity-100 transition-all duration-700 rounded-[2rem] blur-xl"></div>
-              <Send className="w-12 h-12 text-diamond relative z-10 transition-transform duration-500 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-gradient-to-br from-diamond/25 via-platinum/15 to-luxury/10 opacity-0 group-hover:opacity-100 transition-all duration-700 rounded-xl sm:rounded-2xl lg:rounded-[2rem] blur-xl"></div>
+              <Send className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 text-diamond relative z-10 transition-transform duration-500 group-hover:scale-110" />
               {/* Removed dot pattern */}
             </a>
           </div>
