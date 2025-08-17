@@ -23,31 +23,31 @@ const ContactSection = () => {
             Let's collaborate on the next breakthrough innovation
           </p> */}
           
-          <div className="flex flex-row flex-wrap justify-center items-center gap-6 px-4">
+          <div className="flex flex-row justify-center items-center gap-3 sm:gap-6 px-4">
             <a 
               href="https://www.linkedin.com/in/vishnu-bindu-balachandran-6882811a2/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group relative w-20 h-20 rounded-2xl flex items-center justify-center glass-card-premium border-2 border-luxury/25 hover:border-luxury/50 transition-ultra hover-glow"
+              className="group relative w-14 h-14 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center glass-card-premium border border-luxury/25 hover:border-luxury/50 transition-ultra hover-glow"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-luxury/25 via-platinum/15 to-diamond/10 opacity-0 group-hover:opacity-100 transition-all duration-700 rounded-2xl blur-xl"></div>
-              <Linkedin className="w-10 h-10 text-luxury relative z-10 transition-transform duration-500 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-gradient-to-br from-luxury/25 via-platinum/15 to-diamond/10 opacity-0 group-hover:opacity-100 transition-all duration-700 rounded-xl sm:rounded-2xl blur-xl"></div>
+              <Linkedin className="w-7 h-7 sm:w-10 sm:h-10 text-luxury relative z-10 transition-transform duration-500 group-hover:scale-110" />
             </a>
             <a 
               href="mailto:vishnubindubalachandran@outlook.com"
-              className="group relative w-20 h-20 rounded-2xl flex items-center justify-center glass-card-premium border-2 border-platinum/25 hover:border-platinum/50 transition-ultra hover-glow"
+              className="group relative w-14 h-14 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center glass-card-premium border border-platinum/25 hover:border-platinum/50 transition-ultra hover-glow"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-platinum/25 via-luxury/15 to-diamond/10 opacity-0 group-hover:opacity-100 transition-all duration-700 rounded-2xl blur-xl"></div>
-              <Mail className="w-10 h-10 text-platinum relative z-10 transition-transform duration-500 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-gradient-to-br from-platinum/25 via-luxury/15 to-diamond/10 opacity-0 group-hover:opacity-100 transition-all duration-700 rounded-xl sm:rounded-2xl blur-xl"></div>
+              <Mail className="w-7 h-7 sm:w-10 sm:h-10 text-platinum relative z-10 transition-transform duration-500 group-hover:scale-110" />
             </a>
             <a 
               href="https://x.com/wizard_of_mudra" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group relative w-20 h-20 rounded-2xl flex items-center justify-center glass-card-premium border-2 border-diamond/25 hover:border-diamond/50 transition-ultra hover-glow"
+              className="group relative w-14 h-14 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center glass-card-premium border border-diamond/25 hover:border-diamond/50 transition-ultra hover-glow"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-diamond/25 via-platinum/15 to-luxury/10 opacity-0 group-hover:opacity-100 transition-all duration-700 rounded-2xl blur-xl"></div>
-              <svg className="w-10 h-10 text-diamond relative z-10 transition-transform duration-500 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
+              <div className="absolute inset-0 bg-gradient-to-br from-diamond/25 via-platinum/15 to-luxury/10 opacity-0 group-hover:opacity-100 transition-all duration-700 rounded-xl sm:rounded-2xl blur-xl"></div>
+              <svg className="w-7 h-7 sm:w-10 sm:h-10 text-diamond relative z-10 transition-transform duration-500 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
               </svg>
               {/* Removed dot pattern */}
