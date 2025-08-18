@@ -69,11 +69,12 @@ const ExpertiseSection = () => {
                       {area.title}
                     </h3>
                     <div className="w-16 h-px bg-gradient-to-r from-transparent via-luxury to-transparent opacity-60 mb-6"></div>
-                    <div className="flex flex-wrap gap-2">
+                    {/* Tags removed as requested */}
+                    {/* <div className="flex flex-wrap gap-2">
                       {area.tags.map((tag, tagIndex) => (
                         <Badge key={tagIndex} variant="outline" className="border-luxury/30">{tag}</Badge>
                       ))}
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 
