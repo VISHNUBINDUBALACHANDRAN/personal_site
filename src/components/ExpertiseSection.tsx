@@ -1,37 +1,24 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Plane, Atom, Heart, Shield, TrendingUp, Brain, Zap, Microscope, Lock, Calculator } from "lucide-react";
 const ExpertiseSection = () => {
   const expertiseAreas = [{
     icon: <Plane className="w-8 h-8" />,
-    title: "Aerospace + AI",
-    // description: "Developing intelligent systems for aerospace applications, combining cutting-edge AI with aviation technology.",
-    tags: ["Machine Learning", "Aerospace Engineering", "Autonomous Systems"]
+    title: "Aerospace + AI"
   }, {
     icon: <Atom className="w-8 h-8" />,
-    title: "Quantum Computing",
-    // description: "Exploring the intersection of quantum computing and artificial intelligence for breakthrough solutions.",
-    tags: ["Quantum AI", "Quantum Algorithms", "Research"]
+    title: "Quantum Computing"
   }, {
     icon: <Lock className="w-8 h-8" />,
-    title: "Cybersecurity + AI",
-    // description: "Developing AI-powered security solutions to protect against modern cyber threats.",
-    tags: ["Cybersecurity", "Threat Detection", "ML Security"]
+    title: "Cybersecurity + AI"
   }, {
     icon: <Calculator className="w-8 h-8" />,
-    title: "Financial Science + AI",
-    // description: "Applying artificial intelligence to solve complex problems in financial markets and analysis.",
-    tags: ["FinTech", "Algorithmic Trading", "Risk Analysis"]
+    title: "Financial Science + AI"
   }, {
     icon: <Microscope className="w-8 h-8" />,
-    title: "Advanced Materials Discovery + AI",
-    // description: "Leveraging AI to accelerate the discovery and development of next-generation materials.",
-    tags: ["Material Science", "Deep Learning", "Research"]
+    title: "Advanced Materials Discovery + AI"
   }, {
     icon: <Heart className="w-8 h-8" />,
-    title: "Predictive Health Maintenance + AI",
-    // description: "Creating predictive models for health maintenance using artificial intelligence algorithms.",
-    tags: ["Healthcare AI", "Predictive Analytics", "Biomedical"]
+    title: "Predictive Health Maintenance + AI"
   }];
   return (
     <section className="py-32 relative overflow-hidden">
@@ -68,13 +55,7 @@ const ExpertiseSection = () => {
                     <h3 className="text-3xl font-playfair font-bold gradient-luxury-glass mb-6 tracking-tight">
                       {area.title}
                     </h3>
-                    <div className="w-16 h-px bg-gradient-to-r from-transparent via-luxury to-transparent opacity-60 mb-6"></div>
-                    {/* Tags removed as requested */}
-                    {/* <div className="flex flex-wrap gap-2">
-                      {area.tags.map((tag, tagIndex) => (
-                        <Badge key={tagIndex} variant="outline" className="border-luxury/30">{tag}</Badge>
-                      ))}
-                    </div> */}
+                    <div className="w-16 h-px bg-gradient-to-r from-transparent via-luxury to-transparent opacity-60"></div>
                   </div>
                 </div>
                 
