@@ -6,32 +6,32 @@ const ExpertiseSection = () => {
     icon: <Plane className="w-8 h-8" />,
     title: "Aerospace + AI",
     // description: "Developing intelligent systems for aerospace applications, combining cutting-edge AI with aviation technology.",
-    // tags: ["Machine Learning", "Aerospace Engineering", "Autonomous Systems"]
+    tags: ["Machine Learning", "Aerospace Engineering", "Autonomous Systems"]
   }, {
     icon: <Atom className="w-8 h-8" />,
     title: "Quantum Computing",
     // description: "Exploring the intersection of quantum computing and artificial intelligence for breakthrough solutions.",
-    // tags: ["Quantum AI", "Quantum Algorithms", "Research"]
+    tags: ["Quantum AI", "Quantum Algorithms", "Research"]
   }, {
     icon: <Lock className="w-8 h-8" />,
     title: "Cybersecurity + AI",
     // description: "Developing AI-powered security solutions to protect against modern cyber threats.",
-    // tags: ["Cybersecurity", "Threat Detection", "ML Security"]
+    tags: ["Cybersecurity", "Threat Detection", "ML Security"]
   }, {
     icon: <Calculator className="w-8 h-8" />,
     title: "Financial Science + AI",
     // description: "Applying artificial intelligence to solve complex problems in financial markets and analysis.",
-    // tags: ["FinTech", "Algorithmic Trading", "Risk Analysis"]
+    tags: ["FinTech", "Algorithmic Trading", "Risk Analysis"]
   }, {
     icon: <Microscope className="w-8 h-8" />,
     title: "Advanced Materials Discovery + AI",
     // description: "Leveraging AI to accelerate the discovery and development of next-generation materials.",
-    // tags: ["Material Science", "Deep Learning", "Research"]
+    tags: ["Material Science", "Deep Learning", "Research"]
   }, {
     icon: <Heart className="w-8 h-8" />,
     title: "Predictive Health Maintenance + AI",
     // description: "Creating predictive models for health maintenance using artificial intelligence algorithms.",
-    // tags: ["Healthcare AI", "Predictive Analytics", "Biomedical"]
+    tags: ["Healthcare AI", "Predictive Analytics", "Biomedical"]
   }];
   return (
     <section className="py-32 relative overflow-hidden">
