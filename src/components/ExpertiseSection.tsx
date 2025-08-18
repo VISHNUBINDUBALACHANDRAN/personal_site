@@ -8,15 +8,10 @@ const ExpertiseSection = () => {
     // description: "Developing intelligent systems for aerospace applications, combining cutting-edge AI with aviation technology.",
     tags: ["Machine Learning", "Aerospace Engineering", "Autonomous Systems"]
   }, {
-    icon: <Microscope className="w-8 h-8" />,
-    title: "Advanced Materials Discovery + AI",
-    // description: "Leveraging AI to accelerate the discovery and development of next-generation materials.",
-    tags: ["Material Science", "Deep Learning", "Research"]
-  }, {
-    icon: <Heart className="w-8 h-8" />,
-    title: "Predictive Health Maintenance + AI",
-    // description: "Creating predictive models for health maintenance using artificial intelligence algorithms.",
-    tags: ["Healthcare AI", "Predictive Analytics", "Biomedical"]
+    icon: <Atom className="w-8 h-8" />,
+    title: "Quantum Computing",
+    // description: "Exploring the intersection of quantum computing and artificial intelligence for breakthrough solutions.",
+    tags: ["Quantum AI", "Quantum Algorithms", "Research"]
   }, {
     icon: <Lock className="w-8 h-8" />,
     title: "Cybersecurity + AI",
@@ -28,10 +23,15 @@ const ExpertiseSection = () => {
     // description: "Applying artificial intelligence to solve complex problems in financial markets and analysis.",
     tags: ["FinTech", "Algorithmic Trading", "Risk Analysis"]
   }, {
-    icon: <Atom className="w-8 h-8" />,
-    title: "Quantum Computing",
-    // description: "Exploring the intersection of quantum computing and artificial intelligence for breakthrough solutions.",
-    tags: ["Quantum AI", "Quantum Algorithms", "Research"]
+    icon: <Microscope className="w-8 h-8" />,
+    title: "Advanced Materials Discovery + AI",
+    // description: "Leveraging AI to accelerate the discovery and development of next-generation materials.",
+    tags: ["Material Science", "Deep Learning", "Research"]
+  }, {
+    icon: <Heart className="w-8 h-8" />,
+    title: "Predictive Health Maintenance + AI",
+    // description: "Creating predictive models for health maintenance using artificial intelligence algorithms.",
+    tags: ["Healthcare AI", "Predictive Analytics", "Biomedical"]
   }];
   return (
     <section className="py-32 relative overflow-hidden">
@@ -69,9 +69,11 @@ const ExpertiseSection = () => {
                       {area.title}
                     </h3>
                     <div className="w-16 h-px bg-gradient-to-r from-transparent via-luxury to-transparent opacity-60 mb-6"></div>
-                    <p className="gradient-luxury-glass opacity-85 leading-relaxed text-lg font-light">
-                      {area.description}
-                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {area.tags.map((tag, tagIndex) => (
+                        <Badge key={tagIndex} variant="outline" className="border-luxury/30">{tag}</Badge>
+                      ))}
+                    </div>
                   </div>
                 </div>
                 
