@@ -17,7 +17,7 @@ const ExperienceSection = () => {
     },
     {
       company: "Broadridge Financial Solutions",
-      position: "AI Engineer",
+      position: "Post-graduate Intern",
       duration: "2021 - 2022"
     }
   ];
